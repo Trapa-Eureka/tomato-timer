@@ -36,14 +36,16 @@ const initialState = {
     timerDuration: TIMER_DURATION
 }
 
-const reducer(state = initialState, action){
+function reducer(state = initialState, action){
     switch(action.type){
         case START_TIMER:
             return applyStartTimer(state);
         case RESTART_TIMER:
             return applyRestartTimer(state);
-        case ADD_TIMER:
+        case ADD_SECOND:
             return applyAddSecond(state);
+        default:
+            return state;
     }
 }
 
@@ -64,7 +66,7 @@ function applyRestartTimer(state){
     };
 }
 
-function applyRestartTimer(state){
+function applyAddSecond(state){
     if (state.elapsedTime < TIMER_DURATION) {
         return {
             ...state,
