@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 function Button({ iconName, onPress }) {
