@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19003,
+  "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 4920,
+  "packagerPid": 1367,
   "expoServerNgrokUrl": "https://x3-4zn.trapa.tomato-timer.exp.direct",
   "packagerNgrokUrl": "https://packager.x3-4zn.trapa.tomato-timer.exp.direct",
-  "ngrokPid": 4941
+  "ngrokPid": 1394
 }
