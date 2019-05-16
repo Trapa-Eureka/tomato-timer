@@ -30,6 +30,7 @@ class Timer extends Component{
         return(
             <View style={styles.container}>
                 <StatusBar barStyle="light-content" />
+                <Text style={styles.title}>25 Minute Timer</Text>
                 <View style={styles.upper}>
                     <Text style={styles.time}>
                         {formatTime(timerDuration - elapsedTime)}
@@ -51,17 +52,27 @@ class Timer extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: "#ffffff"
+    },
+    title: {
+        color: "#ffffff",
+        fontSize: 20,
+        paddingTop: 50,
+        textAlign: "center",
+        fontWeight: "400",
         backgroundColor: "#ce0b24"
     },
     upper: {
         flex: 2,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#ce0b24"
     },
     lower: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#b4091f"
     },
     time: {
         color: "#ffffff",
